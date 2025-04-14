@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-version:
+      python: 3.11
+    pre_build:
+      commands:
+    build:
+      commands:
+        - echo Compiling the python code
+        - pip install fillpdf -t .
+    post_build:
+      commands:
+  artifacts:
+    files:
+      - '**/*'
